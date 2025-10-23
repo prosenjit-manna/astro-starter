@@ -1,5 +1,6 @@
 ---
 import Button from '../components/button/button.tsx';
+import TestComponentA from '../components/testComponentA/index.jsx';
 import '../styles/global.css';
 ---
 
@@ -15,5 +16,10 @@ import '../styles/global.css';
 		<h1>Astro</h1>
 
 		<Button text='Hello' />
+
+		<div style="margin-top: 100vh;">
+			Spacer
+		</div>
+		<TestComponentA client:visible />
 	</body>
 </html>
